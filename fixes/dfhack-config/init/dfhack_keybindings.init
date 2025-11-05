@@ -1,0 +1,16 @@
+# keybinding add Ctrl-Alt-N "stripcaged all"
+# keybinding add Ctrl-Alt-M masspit
+# keybinding add Ctrl-Alt-G gui/autogems
+
+# revtoggle
+keybinding add Ctrl-A@dwarfmode/Default "revtoggle"
+
+# quickfort
+keybinding add Alt-Q@dwarfmode/LookAround "quickfort gui"
+
+# tiletypes paint
+# keybinding add Alt-P@dwarfmode/LookAround "tiletypes-here-point"
+
+# quantum stockpiles
+keybinding add Ctrl-Alt-Q "gui/quantum"
+keybinding add Ctrl-Alt-W "assign-minecarts all"

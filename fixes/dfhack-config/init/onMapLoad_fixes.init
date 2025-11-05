@@ -1,0 +1,59 @@
+# bug fixes
+fix/blood-del enable
+repeat -time 7 -timeUnits days -command [ fix/civil-war ]
+# enable if you have units on expeditions
+# repeat -name fix-corrupt-equipment -time 100 -timeUnits ticks -command [ fix/corrupt-equipment ]
+repeat -time 7 -timeUnits days -command [ fix/corrupt-jobs ]
+repeat -time 1 -timeUnits months -command [ fix/dead-units ]
+# not fix/drop-webs because do not need it
+# not fix/dry-buckets because wf covers it
+# bugged in linux? Just focus on windows
+repeat -time 7 -timeUnits days -command [ fix/empty-wheelbarrows ]
+# not fix/engravings because it does not work
+# bugged in linux? Just focus on windows
+repeat -time 7 -timeUnits days -command [ fix/general-strike ]
+repeat -time 7 -timeUnits days -command [ fix/item-occupancy ]
+repeat -time 1 -timeUnits days -command [ fix/loyaltycascade ]
+# not fix/noexert-exhaustion because it does not work
+# not fix/occupancy because it does not work
+# not fix/ownership because it does not work
+# not fix/population-cap because not needed
+# not fix/protect-nicks because not needed
+# not fix/retrieve-units because only run when needed
+# not fix/sleepers because it does not work
+# not fix/stable-temp because tweak fast-heat 100 covers it
+repeat -time 1 -timeUnits months -command [ fix/stuck-instruments ]
+# not fix/stuck-merchants because should not run with merchants on the map
+# not fix/stuck-worship because it does not work
+repeat -time 1 -timeUnits months -command [ fix/stuckdoors ]
+# not fix/tile-occupancy because requires that a tile is selected with the in-game cursor
+enable fix-unit-occupancy
+
+# dwarfvet
+enable dwarfvet
+
+# dump abandoned items on floor
+# https://dwarffortressbugtracker.com/view.php?id=1299
+# Done by onMapload_PyLNP.init
+# repeat -time 1 -timeUnits days -command [ cleanowned ]
+
+# wf
+enable workflow
+workflow enable drybuckets
+workflow enable auto-melt
+
+# ban cooking
+on-new-fortress ban-cooking booze oil tallow thread
+
+# deteriorate
+deteriorate start --types corpses --freq 0.1,days
+# deteriorate start --types clothes
+
+# starvingdead
+starvingdead start
+
+# nestboxes
+enable nestboxes
+
+# autounsuspend
+autounsuspend start
