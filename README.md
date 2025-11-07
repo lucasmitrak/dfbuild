@@ -1,4 +1,6 @@
 # dfbuild
+This tool creates a Dwarf Fortress build with common tools, enhancements, and bugfixes.  Microsoft Windows only.
+
 ## Description
 dfbuild is a bash script that installs and configures the following components:
 * Dwarf Fortress v47.05
